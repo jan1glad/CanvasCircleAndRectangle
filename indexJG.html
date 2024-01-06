@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssJG/style_JG.css">
+    <script src="skryptyJG/skrypty_JG.js"></script>
+    <title>Figury JG</title>
+</head>
+<body onload="clearCanvas()">
+    <h1>Figury Gładykowskiego</h1>
+    <canvas id="myCanvasJG" width="500" height="360"></canvas>
+    <h3>Punkt</h3>
+    <label>Współrzędne Kartezjańskie </label>
+    <label> x: </label><input type="number" id="x">
+    <label> y: </label><input type="number" id="y"><br><br>
+    <button onclick="innitIT()">Oblicz i narysuj</button><br>
+    <!-- <label>Współrzędne biegunowe </label>
+    <label> r: </label><input type="number" id=?>
+    <label> th: </label><input type="number" id=?>
+    <button onclick=?>Zmień</button><br> -->
+    <h3>Prostokąt</h3>
+    <label> Pole prostokąta: </label><p id="prostokatPole" ></p>
+    <label> Obwód prostokąta: </label><p id="prostokatObwod" ></p>
+    <label> Wybierz kolor wypełnienia: </label>
+    <label for="kolor"></label><select name="kolor" id="kolor">
+        <option value="blue">Niebieski</option>
+        <option value="green">Zielony</option>
+        <option value="red">Czerwony</option>
+        <option value="yellow">Żółty</option>
+        <option value="orange">Pomarańczowy</option>
+        <option value="purple">Fioletowy</option>
+        <option value="grey">Szary</option>
+        <option value="black">Czarny</option>
+    </select>
+    <br>
+    <br><button onclick="malujProstokatKolorem()">Wypełnij prostokąt kolorem</button>
+    <h3>Koło / Okrąg</h3>
+    <label> Pole Koła: </label><p id="koloPole" ></p>
+    <label> Obwód Koła: </label><p id="koloObwod" ></p>
+    <label> Wybierz kolor wypełnienia: </label>
+    <label for="kolor2"></label><select name="kolor2" id="kolor2">
+        <option value="blue">Niebieski</option>
+        <option value="green">Zielony</option>
+        <option value="red">Czerwony</option>
+        <option value="yellow">Żółty</option>
+        <option value="orange">Pomarańczowy</option>
+        <option value="purple">Fioletowy</option>
+        <option value="grey">Szary</option>
+        <option value="black">Czarny</option>
+    </select>
+    <br>
+    <br><button onclick="malujKoloKolorem()">Wypełnij koło kolorem</button>
+
+
+
+
+</body>
+</html>
